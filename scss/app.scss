@@ -1,0 +1,12 @@
+@import '~normalize.css/normalize.css';
+
+html {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
