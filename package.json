@@ -1,7 +1,7 @@
 {
-  "name": "next-app",
+  "name": "next-starter-kit",
   "version": "1.0.0",
-  "description": "nextjs sample application",
+  "description": "nextjs starter kit",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -10,8 +10,8 @@
   },
   "keywords": [
     "nextjs",
-    "sample",
-    "application"
+    "starter",
+    "kit"
   ],
   "author": "diego.zuniga.mendez@gmail.com",
   "license": "MIT",

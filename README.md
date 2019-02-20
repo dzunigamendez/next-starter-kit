@@ -1,14 +1,37 @@
-# NextJS Application
+# NextJS Starter Kit
 
-Basic concepts
-
-## Create `package.json` file
+## Setup
 
 ```sh
+git clone https://github.com/dzunigamendez/next-starter-kit
+cd next-starter-kit
+npm install
+```
+
+## Run dev server
+
+```sh
+npm run dev
+```
+
+## Run prod server
+
+```sh
+npm run build
+npm start
+```
+
+## Create Next.js app from scratch
+
+### Create `package.json` file
+
+```sh
+mkdir next-starter-kit
+cd next-starter-kit
 npm init
 ```
 
-## Setup nextjs app
+### Setup nextjs app
 
 [Here](https://nextjs.org/docs/#setup) more information
 
@@ -16,7 +39,7 @@ npm init
 npm install --save next react react-dom
 ```
 
-## Add scripts to `package.json` file
+### Add scripts to `package.json` file
 
 ```json
 {
@@ -28,7 +51,7 @@ npm install --save next react react-dom
 }
 ```
 
-## Create index page
+### Create index page
 
 - Create `pages` directory
 - Create `pages/index.js` file
@@ -42,13 +65,13 @@ function Home() {
 export default Home;
 ```
 
-## Start up the application
+### Start up the application
 
 ```sh
 npm run dev
 ```
 
-## Next.js + CSS/SASS
+### Next.js + CSS/SASS
 
 - Install dev dependencies
 
@@ -65,7 +88,13 @@ const withSass = require('@zeit/next-sass');
 module.exports = withCss(withSass());
 ```
 
-## Sample pages
+### Sample structure
+
+- `components` - React components
+- `sass` - SASS code
+- `static` - Images
+
+### Sample pages
 
 - `pages/index.js` - Link examples
 - `pages/mavel.js` - Marvel CSS grid example
