@@ -110,3 +110,4 @@ module.exports = {
 - `pages/index.js` - Link examples
 - `pages/mavel.js` - Marvel CSS grid example
 - `pages/veggies.js` - Veggies CSS grid example
+- `pages/scrollmagic.js` - ScrollMagic example

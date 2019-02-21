@@ -5,23 +5,32 @@
 }
 
 .slider__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+
+.slider__bg {
   position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center center / cover no-repeat;
+}
 
-  &:nth-child(1) {
-    background: darkorange;
-  }
-
-  &:nth-child(2) {
-    background: green;
-  }
-
-  &:nth-child(3) {
-    background: brown;
-  }
-
-  &:nth-child(4) {
-    background: yellowgreen;
-  }
+.slider__title {
+  font-size: 48px;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
