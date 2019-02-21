@@ -16,10 +16,12 @@
   "author": "diego.zuniga.mendez@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "gsap": "^2.1.0",
     "next": "^8.0.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react-dom": "^16.8.2",
+    "scrollmagic": "^2.0.6"
   },
   "devDependencies": {
     "@zeit/next-css": "^1.0.1",

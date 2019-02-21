@@ -17,6 +17,11 @@ function Home() {
               <a>Veggies</a>
             </Link>
           </li>
+          <li>
+            <Link href="/scrollmagic">
+              <a>ScrollMagic</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </main>
