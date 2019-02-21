@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import '../scss/home.scss';
 
 function Home() {
   return (
@@ -15,6 +14,11 @@ function Home() {
           <li>
             <Link href="/veggies">
               <a>Veggies</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/scrollmagic">
+              <a>ScrollMagic</a>
             </Link>
           </li>
         </ul>

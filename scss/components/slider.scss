@@ -1,0 +1,27 @@
+.slider {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider__slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  &:nth-child(1) {
+    background: darkorange;
+  }
+
+  &:nth-child(2) {
+    background: green;
+  }
+
+  &:nth-child(3) {
+    background: brown;
+  }
+
+  &:nth-child(4) {
+    background: yellowgreen;
+  }
+}
