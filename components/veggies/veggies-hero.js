@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../scss/veggies-hero.scss';
 
 const images = [
   '/static/veggies/strawberry.jpg',

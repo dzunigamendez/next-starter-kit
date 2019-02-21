@@ -1,12 +1,11 @@
 @import '~normalize.css/normalize.css';
+@import 'base';
 
-html {
-  font-family: 'Lato', sans-serif;
-  box-sizing: border-box;
-}
+@import 'pages/home';
+@import 'pages/marvel';
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+@import 'components/marvel-logo';
+@import 'components/marvel-grid';
+@import 'components/marvel-hero';
+@import 'components/slider';
+@import 'components/veggies-hero';

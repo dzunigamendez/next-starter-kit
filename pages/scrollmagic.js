@@ -5,7 +5,6 @@ function ScrollMagic() {
   return (
     <main className="scrollmagic">
       <Slider />
-      <h1>Test ScrollMagic</h1>
     </main>
   );
 }
