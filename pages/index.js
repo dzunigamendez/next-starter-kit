@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import {DatePicker} from 'antd';
 
 function Home() {
   return (
     <main className="home">
+      <DatePicker />
       <nav>
         <ul>
           <li>
@@ -19,6 +21,11 @@ function Home() {
           <li>
             <Link href="/scrollmagic">
               <a>ScrollMagic</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/starwars">
+              <a>Star Wars</a>
             </Link>
           </li>
         </ul>
