@@ -1,5 +1,9 @@
 import React from 'react';
-import Slider from '../components/scrollmagic/slider';
+import dynamic from 'next/dynamic';
+
+const Slider = dynamic(() => import('../components/scrollmagic/slider'), {
+  ssr: false,
+});
 
 function ScrollMagic() {
   return (

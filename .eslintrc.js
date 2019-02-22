@@ -4,13 +4,8 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'standard',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'prettier/standard',
-    'prettier/react',
-  ],
+  extends: ['standard', 'plugin:react/recommended', 'prettier'],
+  plugins: ['prettier'],
   settings: {
     react: {
       version: 'detect',
