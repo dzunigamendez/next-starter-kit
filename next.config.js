@@ -1,9 +1,12 @@
+const path = require('path');
+const webpack = require('webpack');
 const withPlugins = require('next-compose-plugins');
 const withCss = require('@zeit/next-css');
-const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 
 const nextConfig = {
-  webpack(config) {
+  webpack(config, { isServer, dev }) {
     config.resolve.alias['TimelineMax'] = path.join(
       __dirname,
       'node_modules/gsap/src/uncompressed/TimelineMax.js',
@@ -24,6 +27,26 @@ const nextConfig = {
       __dirname,
       'node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
     );
+
+    config.resolve.alias['@ant-design/icons/lib/dist$'] = path.join(
+      __dirname,
+      'utils/icons.js',
+    );
+
+    if (!dev) {
+      config.plugins.push(
+        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+        new BundleAnalyzerPlugin({
+          analyzerMode: 'static',
+          openAnalyzer: false,
+          reportFilename: path.join(
+            __dirname,
+            '.report',
+            isServer ? 'server-report.html' : 'client-report.html',
+          ),
+        }),
+      );
+    }
 
     return config;
   },

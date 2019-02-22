@@ -4,9 +4,9 @@
   "description": "nextjs starter kit",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "keywords": [
     "nextjs",
@@ -17,6 +17,9 @@
   "license": "MIT",
   "repository": "https://github.com/dzunigamendez/next-starter-kit",
   "dependencies": {
+    "antd": "^3.13.5",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
     "gsap": "^2.1.0",
     "next": "^8.0.1",
     "normalize.css": "^8.0.1",
@@ -29,6 +32,7 @@
   "devDependencies": {
     "@zeit/next-css": "^1.0.1",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
     "babel-plugin-styled-components": "^1.10.0",
     "eslint": "^5.14.1",
     "eslint-config-prettier": "^4.0.0",
@@ -41,6 +45,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "next-compose-plugins": "^2.1.1",
     "node-sass": "^4.11.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "webpack-bundle-analyzer": "^3.0.4"
   }
 }
