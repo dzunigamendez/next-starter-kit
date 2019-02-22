@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import { DatePicker } from 'antd';
 
 function Home() {
   return (
     <section className="home">
+      <DatePicker />
       <nav>
         <ul>
           <li>
