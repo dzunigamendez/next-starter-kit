@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Home() {
   return (
-    <main className="home">
+    <section className="home">
       <nav>
         <ul>
           <li>
@@ -23,7 +23,7 @@ function Home() {
           </li>
         </ul>
       </nav>
-    </main>
+    </section>
   );
 }
 

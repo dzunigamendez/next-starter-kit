@@ -6,11 +6,7 @@ const Slider = dynamic(() => import('../components/scrollmagic/slider'), {
 });
 
 function ScrollMagic() {
-  return (
-    <main className="scrollmagic">
-      <Slider />
-    </main>
-  );
+  return <Slider />;
 }
 
 export default ScrollMagic;

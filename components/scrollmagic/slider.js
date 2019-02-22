@@ -5,7 +5,7 @@ import ScrollMagic from 'ScrollMagic';
 import { Linear } from 'TweenLite';
 import 'AnimationGsap';
 
-const Container = styled.section`
+const Container = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
