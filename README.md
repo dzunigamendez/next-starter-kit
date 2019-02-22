@@ -76,27 +76,15 @@ npm run dev
 - Install dev dependencies
 
 ```sh
-npm install --save-dev @zeit/next-css @zeit/next-sass node-sass
-npm install --save-dev postcss-loader autoprefixer
+npm install --save-dev @zeit/next-css
 ```
 
 - Create `next.config.js` file
 
 ```javascript
 const withCss = require('@zeit/next-css');
-const withSass = require('@zeit/next-sass');
 
-module.exports = withCss(withSass());
-```
-
-- Create `postcss.config.js` file
-
-```javascript
-const autoprefixer = require('autoprefixer');
-
-module.exports = {
-  plugins: [autoprefixer],
-};
+module.exports = withCss();
 ```
 
 ### Sample structure

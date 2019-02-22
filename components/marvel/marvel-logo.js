@@ -1,9 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Logo = styled.img`
+  display: block;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+`;
 
 function MarvelLogo() {
   return (
     <header>
-      <img className="marvel-logo" src="/static/marvel/logo.svg" />
+      <Logo src="/static/marvel/logo.svg" />
     </header>
   );
 }

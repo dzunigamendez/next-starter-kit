@@ -1,6 +1,20 @@
 import React from 'react';
 import App, {Container} from 'next/app';
-import '../scss/app.scss';
+import {createGlobalStyle} from 'styled-components';
+import 'normalize.css/normalize.css';
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+`;
 
 class MyApp extends App {
   static async getInitialProps({Component, ctx}) {
@@ -18,6 +32,7 @@ class MyApp extends App {
 
     return (
       <Container>
+        <GlobalStyle />
         <Component {...pageProps} />
       </Container>
     );
