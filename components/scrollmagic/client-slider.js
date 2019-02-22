@@ -40,10 +40,34 @@ function ClientSlider() {
 
   return (
     <section className="slider">
-      <div className="slider__slide">ONE</div>
-      <div className="slider__slide">TWO</div>
-      <div className="slider__slide">THREE</div>
-      <div className="slider__slide">FOUR</div>
+      <div className="slider__slide">
+        <h3 className="slider__title">ONE</h3>
+        <div
+          className="slider__bg"
+          style={{backgroundImage: 'url("/static/slider/slide1.jpg")'}}
+        />
+      </div>
+      <div className="slider__slide">
+        <h3 className="slider__title">TWO</h3>
+        <div
+          className="slider__bg"
+          style={{backgroundImage: 'url("/static/slider/slide2.jpg")'}}
+        />
+      </div>
+      <div className="slider__slide">
+        <h3 className="slider__title">THREE</h3>
+        <div
+          className="slider__bg"
+          style={{backgroundImage: 'url("/static/slider/slide3.jpg")'}}
+        />
+      </div>
+      <div className="slider__slide">
+        <h3 className="slider__title">FOUR</h3>
+        <div
+          className="slider__bg"
+          style={{backgroundImage: 'url("/static/slider/slide4.jpg")'}}
+        />
+      </div>
     </section>
   );
 }
