@@ -7,6 +7,11 @@ function Home() {
       <nav>
         <ul>
           <li>
+            <Link href="/movies">
+              <a>Movies</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/marvel">
               <a>Marvel</a>
             </Link>

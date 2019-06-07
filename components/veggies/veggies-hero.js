@@ -15,6 +15,8 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
+  margin: 0;
+
   &:nth-child(3) {
     grid-column: 3/4;
     grid-row: 1/3;
