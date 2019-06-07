@@ -71,22 +71,6 @@ export default Home;
 npm run dev
 ```
 
-### Next.js + CSS/SASS/POSTCSS
-
-- Install dev dependencies
-
-```sh
-npm install --save-dev @zeit/next-css
-```
-
-- Create `next.config.js` file
-
-```javascript
-const withCss = require('@zeit/next-css');
-
-module.exports = withCss();
-```
-
 ### Sample structure
 
 - `components` - React components
@@ -96,6 +80,6 @@ module.exports = withCss();
 ### Sample pages
 
 - `pages/index.js` - Link examples
+- `pages/movies.js` - Movies example
 - `pages/mavel.js` - Marvel CSS grid example
 - `pages/veggies.js` - Veggies CSS grid example
-- `pages/scrollmagic.js` - ScrollMagic example
