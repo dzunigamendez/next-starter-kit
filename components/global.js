@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { createGlobalStyle } from 'styled-components';
-import styledNormalize from 'styled-normalize';
+import { normalize } from 'styled-normalize';
+import Typography from 'typography';
+import theme from 'typography-theme-de-young';
+
+export const typography = new Typography(theme);
 
 const GlobalStyle = createGlobalStyle`
-  ${styledNormalize}
+  ${normalize}
+  ${typography.toString()}
 
   html {
-    font-family: 'Lato', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
   }
