@@ -1,7 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const withPlugins = require('next-compose-plugins');
-const withCss = require('@zeit/next-css');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
@@ -52,4 +50,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([withCss], nextConfig);
+module.exports = nextConfig;
